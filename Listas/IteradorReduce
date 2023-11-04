@@ -1,0 +1,8 @@
+// Iterador de listas com Reduce em JavaScript
+
+let numeros = [5, 10, 20]
+
+numeros.reduce((acc, value) => acc + value) // Basicamente o reduce vai receber um acumulador (acc) + o restante dos valores do array
+// Nesse caso o acc seria 5, somaria com o 10, logo o acc virou 15 e depois somar com o 20, totalizando 35.
+// Existe uma forma de definir o acc com outro valor. numeros.reduce((acc, value) => acc + value, 100), dessa forma o acc começaria com 100 já. 
+// Lembrando que o value se trabalhado com objetos tem que deixar claro o atributo que será utilizado no lugar do value.
